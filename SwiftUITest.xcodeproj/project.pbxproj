@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460B6EE323B75C620064E4E2 /* RockPaperSci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B6EE223B75C620064E4E2 /* RockPaperSci.swift */; };
+		460B6EE523B75CDD0064E4E2 /* RockPaperAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460B6EE423B75CDD0064E4E2 /* RockPaperAssets.xcassets */; };
 		461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270D923A5111F0033B6F6 /* AppDelegate.swift */; };
 		461270DC23A5111F0033B6F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270DB23A5111F0033B6F6 /* SceneDelegate.swift */; };
 		461270DE23A5111F0033B6F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270DD23A5111F0033B6F6 /* ContentView.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460B6EE223B75C620064E4E2 /* RockPaperSci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperSci.swift; sourceTree = "<group>"; };
+		460B6EE423B75CDD0064E4E2 /* RockPaperAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RockPaperAssets.xcassets; sourceTree = "<group>"; };
 		461270D623A5111F0033B6F6 /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		461270D923A5111F0033B6F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		461270DB23A5111F0033B6F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460B6EE123B75BE60064E4E2 /* Project 3 - RockPaperSc */ = {
+			isa = PBXGroup;
+			children = (
+				460B6EE223B75C620064E4E2 /* RockPaperSci.swift */,
+				460B6EE423B75CDD0064E4E2 /* RockPaperAssets.xcassets */,
+			);
+			path = "Project 3 - RockPaperSc";
+			sourceTree = "<group>";
+		};
 		461270CD23A5111F0033B6F6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 		461270D823A5111F0033B6F6 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				460B6EE123B75BE60064E4E2 /* Project 3 - RockPaperSc */,
 				461270F323A56F640033B6F6 /* Other Files */,
 				461270F223A56F4E0033B6F6 /* Project 2 GuessTheFlag */,
 				461270F123A56F3B0033B6F6 /* Project 1 Unit Conversion */,
@@ -168,6 +182,7 @@
 			files = (
 				461270F523A642B70033B6F6 /* FlagsAssets.xcassets in Resources */,
 				461270E623A511220033B6F6 /* LaunchScreen.storyboard in Resources */,
+				460B6EE523B75CDD0064E4E2 /* RockPaperAssets.xcassets in Resources */,
 				461270E323A511220033B6F6 /* Preview Assets.xcassets in Resources */,
 				461270E023A511220033B6F6 /* Assets.xcassets in Resources */,
 			);
@@ -181,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				461270F023A552530033B6F6 /* UnitConversionView.swift in Sources */,
+				460B6EE323B75C620064E4E2 /* RockPaperSci.swift in Sources */,
 				461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */,
 				461270DC23A5111F0033B6F6 /* SceneDelegate.swift in Sources */,
 				461270DE23A5111F0033B6F6 /* ContentView.swift in Sources */,

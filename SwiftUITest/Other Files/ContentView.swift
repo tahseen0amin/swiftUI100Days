@@ -8,6 +8,20 @@
 
 import SwiftUI
 
+struct SubHeadlineTextStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.blue)
+    }
+}
+
+extension View {
+    func headlineFont() -> some View{
+        self.modifier(SubHeadlineTextStyle())
+    }
+}
+
 struct ContentView: View {
     @State private var checkedAmount = ""
     @State private var numOfPeople = 2
@@ -59,10 +73,13 @@ struct ContentView: View {
                 
                 Section(header: Text("Total Amount")) {
                     Text("£\(totalA, specifier: "%.2f")")
+                        .foregroundColor(tipPercentage == 0 ? .red : .black)
+                    
                 }
                 
                 Section(header: Text("Amount per person")) {
                     Text("£\(totalAmount, specifier: "%.2f")")
+                    .headlineFont()
                 }
             }
         .navigationBarTitle("WeSplit")

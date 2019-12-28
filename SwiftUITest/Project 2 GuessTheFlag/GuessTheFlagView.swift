@@ -8,6 +8,20 @@
 
 import SwiftUI
 
+struct FlagImage: View {
+    
+    var imageName: String
+    
+    var body: some View {
+        Image(imageName)
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.white, lineWidth: 1))
+            .shadow(color: .white, radius: 2)
+    }
+
+}
+
 struct GuessTheFlagView: View {
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
@@ -39,14 +53,8 @@ struct GuessTheFlagView: View {
                        // flag was tapped
                         self.buttonWasPressed(number)
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.white, lineWidth: 1))
-                            .shadow(color: .white, radius: 2)
+                        FlagImage(imageName: self.countries[number])
                     }
-                    
-                    
                 }
                 
             }
