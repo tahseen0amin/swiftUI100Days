@@ -18,6 +18,8 @@
 		461270F023A552530033B6F6 /* UnitConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270EF23A552530033B6F6 /* UnitConversionView.swift */; };
 		461270F523A642B70033B6F6 /* FlagsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461270F423A642B70033B6F6 /* FlagsAssets.xcassets */; };
 		461270F723A642FC0033B6F6 /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270F623A642FC0033B6F6 /* GuessTheFlagView.swift */; };
+		46FC709223B8BB2500707B97 /* BetterRest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709123B8BB2500707B97 /* BetterRest.mlmodel */; };
+		46FC709423B8BB7500707B97 /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709323B8BB7500707B97 /* BetterRestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		461270EF23A552530033B6F6 /* UnitConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConversionView.swift; sourceTree = "<group>"; };
 		461270F423A642B70033B6F6 /* FlagsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlagsAssets.xcassets; sourceTree = "<group>"; };
 		461270F623A642FC0033B6F6 /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
+		46FC709123B8BB2500707B97 /* BetterRest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BetterRest.mlmodel; sourceTree = "<group>"; };
+		46FC709323B8BB7500707B97 /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		461270D823A5111F0033B6F6 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				46FC709023B8BAC300707B97 /* Project 4 - BetterRest */,
 				460B6EE123B75BE60064E4E2 /* Project 3 - RockPaperSc */,
 				461270F323A56F640033B6F6 /* Other Files */,
 				461270F223A56F4E0033B6F6 /* Project 2 GuessTheFlag */,
@@ -120,6 +125,15 @@
 				461270D923A5111F0033B6F6 /* AppDelegate.swift */,
 			);
 			path = "Other Files";
+			sourceTree = "<group>";
+		};
+		46FC709023B8BAC300707B97 /* Project 4 - BetterRest */ = {
+			isa = PBXGroup;
+			children = (
+				46FC709123B8BB2500707B97 /* BetterRest.mlmodel */,
+				46FC709323B8BB7500707B97 /* BetterRestView.swift */,
+			);
+			path = "Project 4 - BetterRest";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,11 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FC709223B8BB2500707B97 /* BetterRest.mlmodel in Sources */,
 				461270F023A552530033B6F6 /* UnitConversionView.swift in Sources */,
 				460B6EE323B75C620064E4E2 /* RockPaperSci.swift in Sources */,
 				461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */,
 				461270DC23A5111F0033B6F6 /* SceneDelegate.swift in Sources */,
 				461270DE23A5111F0033B6F6 /* ContentView.swift in Sources */,
+				46FC709423B8BB7500707B97 /* BetterRestView.swift in Sources */,
 				461270F723A642FC0033B6F6 /* GuessTheFlagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
