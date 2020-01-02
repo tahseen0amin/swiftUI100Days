@@ -20,6 +20,8 @@
 		461270F723A642FC0033B6F6 /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270F623A642FC0033B6F6 /* GuessTheFlagView.swift */; };
 		46FC709223B8BB2500707B97 /* BetterRest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709123B8BB2500707B97 /* BetterRest.mlmodel */; };
 		46FC709423B8BB7500707B97 /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709323B8BB7500707B97 /* BetterRestView.swift */; };
+		46FC709723BDEDB400707B97 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46FC709623BDEDB400707B97 /* start.txt */; };
+		46FC709923BDEDC600707B97 /* ScrabbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709823BDEDC600707B97 /* ScrabbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		461270F623A642FC0033B6F6 /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
 		46FC709123B8BB2500707B97 /* BetterRest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BetterRest.mlmodel; sourceTree = "<group>"; };
 		46FC709323B8BB7500707B97 /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
+		46FC709623BDEDB400707B97 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		46FC709823BDEDC600707B97 /* ScrabbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		461270D823A5111F0033B6F6 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				46FC709523BDE54600707B97 /* Project 5 - Scramble */,
 				46FC709023B8BAC300707B97 /* Project 4 - BetterRest */,
 				460B6EE123B75BE60064E4E2 /* Project 3 - RockPaperSc */,
 				461270F323A56F640033B6F6 /* Other Files */,
@@ -134,6 +139,15 @@
 				46FC709323B8BB7500707B97 /* BetterRestView.swift */,
 			);
 			path = "Project 4 - BetterRest";
+			sourceTree = "<group>";
+		};
+		46FC709523BDE54600707B97 /* Project 5 - Scramble */ = {
+			isa = PBXGroup;
+			children = (
+				46FC709623BDEDB400707B97 /* start.txt */,
+				46FC709823BDEDC600707B97 /* ScrabbleView.swift */,
+			);
+			path = "Project 5 - Scramble";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				461270F523A642B70033B6F6 /* FlagsAssets.xcassets in Resources */,
+				46FC709723BDEDB400707B97 /* start.txt in Resources */,
 				461270E623A511220033B6F6 /* LaunchScreen.storyboard in Resources */,
 				460B6EE523B75CDD0064E4E2 /* RockPaperAssets.xcassets in Resources */,
 				461270E323A511220033B6F6 /* Preview Assets.xcassets in Resources */,
@@ -210,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46FC709223B8BB2500707B97 /* BetterRest.mlmodel in Sources */,
+				46FC709923BDEDC600707B97 /* ScrabbleView.swift in Sources */,
 				461270F023A552530033B6F6 /* UnitConversionView.swift in Sources */,
 				460B6EE323B75C620064E4E2 /* RockPaperSci.swift in Sources */,
 				461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */,
