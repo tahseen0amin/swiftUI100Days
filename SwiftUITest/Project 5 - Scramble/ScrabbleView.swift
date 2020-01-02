@@ -12,6 +12,7 @@ struct ScrabbleView: View {
     @State private var rootWord: String = ""
     @State private var newWord: String = ""
     @State private var usedWords: [String] = []
+    @State private var score = 0
     
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -20,7 +21,7 @@ struct ScrabbleView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [.green, .black]), startPoint: .top, endPoint: .center).edgesIgnoringSafeArea(.all)
+                LinearGradient(gradient: Gradient(colors: [.green, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
                 VStack(){
                     TextField(" Enter new Word", text: $newWord, onCommit: addNewWord)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -33,9 +34,15 @@ struct ScrabbleView: View {
                         .padding()
                         .headlineFont()
                     }
+                    Text("YOUR SCORE: \(score)").headlineFont()
                 }
             }
             .navigationBarTitle(rootWord)
+            .navigationBarItems(trailing:
+                Button(action: startGame) {
+                    Text("Start New Game").foregroundColor(Color.white)
+                }
+            )
         }
         .alert(isPresented: $showingError) {
             Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
@@ -47,6 +54,11 @@ struct ScrabbleView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard answer.count > 0 else {
+            return
+        }
+        
+        guard answer.count > 3 else {
+            wordError(title: "Word not allowed", message: "Word length is short ")
             return
         }
         
@@ -67,6 +79,7 @@ struct ScrabbleView: View {
         
         // insert the word in array
         usedWords.insert(answer, at: 0)
+        updateScore(word: answer)
         newWord = ""
     }
     
@@ -75,6 +88,8 @@ struct ScrabbleView: View {
             if let content = try? String(contentsOf: fileURL) {
                 let wordsArray = content.components(separatedBy: "\n")
                 rootWord = wordsArray.randomElement() ?? "silkworm"
+                usedWords.removeAll()
+                score = 0
                 return
             }
         }
@@ -83,7 +98,10 @@ struct ScrabbleView: View {
     }
     
     private func isOrginal() -> Bool {
-        !usedWords.contains(newWord)
+        if newWord == rootWord {
+            return false
+        }
+        return !usedWords.contains(newWord)
     }
     
     private func isPossible(word: String) -> Bool {
@@ -105,6 +123,10 @@ struct ScrabbleView: View {
         let mispelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
         
         return mispelledRange.location == NSNotFound
+    }
+    
+    private func updateScore(word: String){
+        score += word.count
     }
     
     func wordError(title: String, message: String) {
