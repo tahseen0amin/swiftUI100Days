@@ -50,7 +50,9 @@ struct BetterRestView: View {
                     }.padding()
                     
                     Section(header: Text("YOUR IDEAL BEDTIME IS").font(.headline)) {
-                        Text(sleepTime).font(.largeTitle).fontWeight(.heavy)
+                        Text(sleepTime)
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
                     }.padding()
                 }
             }

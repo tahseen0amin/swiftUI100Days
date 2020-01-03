@@ -11,9 +11,8 @@ import SwiftUI
 struct ScrabbleView: View {
     @State private var rootWord: String = ""
     @State private var newWord: String = ""
-    @State private var usedWords: [String] = []
-    @State private var score = 0
-    
+    @State private var usedWords: [String] = ["previous", "words", "will"]
+    @State private var score = 10
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
@@ -21,7 +20,7 @@ struct ScrabbleView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [.green, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+                LinearGradient(gradient: Gradient(colors: [.green, .black, .green]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
                 VStack(){
                     TextField(" Enter new Word", text: $newWord, onCommit: addNewWord)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -34,14 +33,17 @@ struct ScrabbleView: View {
                         .padding()
                         .headlineFont()
                     }
-                    Text("YOUR SCORE: \(score)").headlineFont()
+                    
+                    Text("YOUR SCORE: \(score)")
+                        .foregroundColor(.white)
+                        .headlineFont()
                 }
             }
             .navigationBarTitle(rootWord)
             .navigationBarItems(trailing:
                 Button(action: startGame) {
                     Text("Start New Game").foregroundColor(Color.white)
-                }
+                }.padding()
             )
         }
         .alert(isPresented: $showingError) {
