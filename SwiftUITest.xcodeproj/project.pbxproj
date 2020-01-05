@@ -22,6 +22,8 @@
 		46FC709423B8BB7500707B97 /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709323B8BB7500707B97 /* BetterRestView.swift */; };
 		46FC709723BDEDB400707B97 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46FC709623BDEDB400707B97 /* start.txt */; };
 		46FC709923BDEDC600707B97 /* ScrabbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709823BDEDC600707B97 /* ScrabbleView.swift */; };
+		46FC709C23C23DA600707B97 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709B23C23DA600707B97 /* ExpensesView.swift */; };
+		46FC709E23C259D800707B97 /* AddNewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC709D23C259D800707B97 /* AddNewExpenseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		46FC709323B8BB7500707B97 /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
 		46FC709623BDEDB400707B97 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		46FC709823BDEDC600707B97 /* ScrabbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabbleView.swift; sourceTree = "<group>"; };
+		46FC709B23C23DA600707B97 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		46FC709D23C259D800707B97 /* AddNewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewExpenseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		461270D823A5111F0033B6F6 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				46FC709A23C23D7900707B97 /* Project 6 - iExpense */,
 				46FC709523BDE54600707B97 /* Project 5 - Scramble */,
 				46FC709023B8BAC300707B97 /* Project 4 - BetterRest */,
 				460B6EE123B75BE60064E4E2 /* Project 3 - RockPaperSc */,
@@ -148,6 +153,15 @@
 				46FC709823BDEDC600707B97 /* ScrabbleView.swift */,
 			);
 			path = "Project 5 - Scramble";
+			sourceTree = "<group>";
+		};
+		46FC709A23C23D7900707B97 /* Project 6 - iExpense */ = {
+			isa = PBXGroup;
+			children = (
+				46FC709B23C23DA600707B97 /* ExpensesView.swift */,
+				46FC709D23C259D800707B97 /* AddNewExpenseView.swift */,
+			);
+			path = "Project 6 - iExpense";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +241,12 @@
 				46FC709223B8BB2500707B97 /* BetterRest.mlmodel in Sources */,
 				46FC709923BDEDC600707B97 /* ScrabbleView.swift in Sources */,
 				461270F023A552530033B6F6 /* UnitConversionView.swift in Sources */,
+				46FC709C23C23DA600707B97 /* ExpensesView.swift in Sources */,
 				460B6EE323B75C620064E4E2 /* RockPaperSci.swift in Sources */,
 				461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */,
 				461270DC23A5111F0033B6F6 /* SceneDelegate.swift in Sources */,
 				461270DE23A5111F0033B6F6 /* ContentView.swift in Sources */,
+				46FC709E23C259D800707B97 /* AddNewExpenseView.swift in Sources */,
 				46FC709423B8BB7500707B97 /* BetterRestView.swift in Sources */,
 				461270F723A642FC0033B6F6 /* GuessTheFlagView.swift in Sources */,
 			);
