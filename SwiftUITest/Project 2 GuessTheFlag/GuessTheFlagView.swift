@@ -15,6 +15,8 @@ struct FlagImage: View {
     var body: some View {
         Image(imageName)
             .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
             .clipShape(Capsule())
             .overlay(Capsule().stroke(Color.white, lineWidth: 1))
             .shadow(color: .white, radius: 2)
@@ -51,7 +53,6 @@ struct GuessTheFlagView: View {
                         .foregroundColor(.white)
                         
                 }
-//                .modifier(PulsatingPulseModifier(animationAmount: self.animationAmount))
                 
                 ForEach(0 ..< 3){ number in
                     Button(action: {
@@ -60,9 +61,11 @@ struct GuessTheFlagView: View {
                     }) {
                         if number == self.correctAnswer {
                             FlagImage(imageName: self.countries[number])
+                                .frame(width: 300, height: 100)
                                 .modifier(SpinningViewModifier(angle: self.spinDegree))
                         } else {
                             FlagImage(imageName: self.countries[number])
+                                .frame(width: 300, height: 100)
                                 .modifier(OpacityViewModifier(opacity: self.opacityAmount))
                         }
                     }

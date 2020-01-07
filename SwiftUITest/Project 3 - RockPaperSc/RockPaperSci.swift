@@ -18,21 +18,28 @@ struct RockPaperSci: View {
     @State private var resultMessage: String = ""
     @State private var resultTitle = ""
     
+    @State private var animationAmount: CGFloat = 1.0
     
     var body: some View {
         NavigationView {
             ZStack() {
                 VStack (spacing: 30) {
                     VStack {
-                        Text("App's Move")
+                        Text("App's Move").fontWeight(.heavy).padding()
                         Image(self.moves[appCurrentChoice])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100, height: 100)
                             .padding()
-                        Text("Challenge")
+                        Text("Challenge").fontWeight(.heavy).padding()
                         Text("\(challenge ? "WIN" : "LOSE")")
                             .padding()
                             .foregroundColor(challenge ? Color.green : Color.red)
                             .headlineFont()
-                        Text("YOUR MOVE")
+                            .padding()
+                            
+                        
+                        Text("YOUR MOVE").fontWeight(.heavy).font(.title).padding()
                     }
                     
                     HStack (spacing: 30) {
@@ -41,7 +48,8 @@ struct RockPaperSci: View {
                                 self.moveButtonPressed(number)
                             }) {
                                 FlagImage(imageName:self.moves[number])
-                                    .padding().cornerRadius(20)
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(20)
                             }
                         }
                     }
@@ -67,6 +75,9 @@ struct RockPaperSci: View {
               dismissButton: .default(Text("Continue")) {
                 self.nextChallenge()
             })
+        }
+        .onAppear{
+            self.animationAmount = 2.0
         }
     }
     
