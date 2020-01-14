@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460B582923CA627B007AF767 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B582823CA627B007AF767 /* ArrowView.swift */; };
+		460B582B23CB78D8007AF767 /* ColorCyclingRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B582A23CB78D8007AF767 /* ColorCyclingRectangle.swift */; };
+		460B582E23CDB002007AF767 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B582D23CDB002007AF767 /* Order.swift */; };
+		460B583023CDC8C0007AF767 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B582F23CDC8C0007AF767 /* OrderView.swift */; };
+		460B583223CDD0DA007AF767 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B583123CDD0DA007AF767 /* AddressView.swift */; };
+		460B583423CDD4A1007AF767 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B583323CDD4A1007AF767 /* CheckoutView.swift */; };
+		460B583623CDD662007AF767 /* Cupcake.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460B583523CDD662007AF767 /* Cupcake.xcassets */; };
 		460B6EE323B75C620064E4E2 /* RockPaperSci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B6EE223B75C620064E4E2 /* RockPaperSci.swift */; };
 		460B6EE523B75CDD0064E4E2 /* RockPaperAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460B6EE423B75CDD0064E4E2 /* RockPaperAssets.xcassets */; };
 		461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461270D923A5111F0033B6F6 /* AppDelegate.swift */; };
@@ -36,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460B582823CA627B007AF767 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		460B582A23CB78D8007AF767 /* ColorCyclingRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingRectangle.swift; sourceTree = "<group>"; };
+		460B582D23CDB002007AF767 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		460B582F23CDC8C0007AF767 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		460B583123CDD0DA007AF767 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		460B583323CDD4A1007AF767 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		460B583523CDD662007AF767 /* Cupcake.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cupcake.xcassets; sourceTree = "<group>"; };
 		460B6EE223B75C620064E4E2 /* RockPaperSci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperSci.swift; sourceTree = "<group>"; };
 		460B6EE423B75CDD0064E4E2 /* RockPaperAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RockPaperAssets.xcassets; sourceTree = "<group>"; };
 		461270D623A5111F0033B6F6 /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +91,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460B582723CA6263007AF767 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				460B582823CA627B007AF767 /* ArrowView.swift */,
+				460B582A23CB78D8007AF767 /* ColorCyclingRectangle.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		460B582C23CDAF3E007AF767 /* Project 10 - Cupcake */ = {
+			isa = PBXGroup;
+			children = (
+				460B582D23CDB002007AF767 /* Order.swift */,
+				460B582F23CDC8C0007AF767 /* OrderView.swift */,
+				460B583123CDD0DA007AF767 /* AddressView.swift */,
+				460B583323CDD4A1007AF767 /* CheckoutView.swift */,
+				460B583523CDD662007AF767 /* Cupcake.xcassets */,
+			);
+			path = "Project 10 - Cupcake";
+			sourceTree = "<group>";
+		};
 		460B6EE123B75BE60064E4E2 /* Project 3 - RockPaperSc */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +140,8 @@
 		461270D823A5111F0033B6F6 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				460B582C23CDAF3E007AF767 /* Project 10 - Cupcake */,
+				460B582723CA6263007AF767 /* Drawing */,
 				4665987023C4A63500E45E67 /* Project 8 - MoonShot */,
 				46FC709A23C23D7900707B97 /* Project 6 - iExpense */,
 				46FC709523BDE54600707B97 /* Project 5 - Scramble */,
@@ -281,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460B583623CDD662007AF767 /* Cupcake.xcassets in Resources */,
 				461270F523A642B70033B6F6 /* FlagsAssets.xcassets in Resources */,
 				46FC709723BDEDB400707B97 /* start.txt in Resources */,
 				4665987623C4A68E00E45E67 /* missions.json in Resources */,
@@ -302,6 +340,7 @@
 			files = (
 				46FC709223B8BB2500707B97 /* BetterRest.mlmodel in Sources */,
 				46FC709923BDEDC600707B97 /* ScrabbleView.swift in Sources */,
+				460B582E23CDB002007AF767 /* Order.swift in Sources */,
 				4665988323C4AE4400E45E67 /* MissionDetailView.swift in Sources */,
 				461270F023A552530033B6F6 /* UnitConversionView.swift in Sources */,
 				46FC709C23C23DA600707B97 /* ExpensesView.swift in Sources */,
@@ -310,11 +349,16 @@
 				461270DA23A5111F0033B6F6 /* AppDelegate.swift in Sources */,
 				4665988123C4AB1B00E45E67 /* MoonshotView.swift in Sources */,
 				461270DC23A5111F0033B6F6 /* SceneDelegate.swift in Sources */,
+				460B582B23CB78D8007AF767 /* ColorCyclingRectangle.swift in Sources */,
 				461270DE23A5111F0033B6F6 /* ContentView.swift in Sources */,
 				4665987D23C4A99100E45E67 /* Astronaut.swift in Sources */,
+				460B583423CDD4A1007AF767 /* CheckoutView.swift in Sources */,
 				46FC709E23C259D800707B97 /* AddNewExpenseView.swift in Sources */,
 				46FC709423B8BB7500707B97 /* BetterRestView.swift in Sources */,
+				460B582923CA627B007AF767 /* ArrowView.swift in Sources */,
+				460B583223CDD0DA007AF767 /* AddressView.swift in Sources */,
 				461270F723A642FC0033B6F6 /* GuessTheFlagView.swift in Sources */,
+				460B583023CDC8C0007AF767 /* OrderView.swift in Sources */,
 				4665987F23C4A9DD00E45E67 /* Mission.swift in Sources */,
 				4665987B23C4A6E500E45E67 /* BundleExtension.swift in Sources */,
 			);
